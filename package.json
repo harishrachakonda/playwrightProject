@@ -1,0 +1,18 @@
+{
+  "name": "playwrighttutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "run:tests:headless": "npx playwright test",
+    "run:tests:headed": "npx playwright test --headed",
+    "show:report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.3"
+  }
+}
