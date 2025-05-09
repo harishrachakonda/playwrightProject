@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "run:tests:headless": "npx playwright test",
-    "run:tests:headed": "npx playwright test --headed",
+    "run:tests:headed": "npx playwright test ./tests/loginLogout.spec.js --headed",
     "show:report": "npx playwright show-report"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.52.0",
-    "@types/node": "^22.15.3"
+    "@types/node": "^22.15.3",
+    "dotenv": "^16.5.0"
   }
 }
