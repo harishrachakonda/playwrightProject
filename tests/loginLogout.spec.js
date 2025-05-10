@@ -12,8 +12,9 @@ test("Verify login and logout of orangeHRM website", async ({page}) =>{
     await page.goto("/");
     const title = await page.title()
     console.log(title);
+    await page.waitForSelector("//*[@name='username']")
     await page.locator("//*[@name='username']").fill("Admin")
-    await page.locator("//*[@name='password']").fill("admin123")
+    await page.locator("//*[@name='password']").fill("admin123"  )
     await page.locator("//*[@type='submit']").click()
     await expect(page).toHaveURL(/dashboard/)
     await expect(page).toHaveTitle("OrangeHRM")

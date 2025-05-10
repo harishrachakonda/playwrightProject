@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "run:tests:headless": "npx playwright test",
-    "run:tests:headed": "npx playwright test ./tests/loginLogout.spec.js --headed",
+    "run:tests:headed": "npx playwright test --headed",
     "show:report": "npx playwright show-report"
   },
   "keywords": [],
