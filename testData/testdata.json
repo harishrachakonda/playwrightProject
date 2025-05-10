@@ -1,0 +1,11 @@
+{
+    "username": "admin@email.com",
+    "password": "admin@123",
+    "interest": ["Cypress","Java","API"],
+    "address":{
+        "area":"Varda",
+        "city": "Hyd",
+        "pincode":50001
+    }
+
+}
