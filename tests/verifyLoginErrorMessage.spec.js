@@ -4,9 +4,9 @@ const {test,expect} = require('@playwright/test')
 
 test("Verify error message", async ({page})=>{
     await page.goto("/")
-    await page.waitForTimeout(5000)
+    // await page.waitForTimeout(5000)
     await page.waitForSelector("//input[@placeholder='Username']")
-    await page.waitForTimeout(5000)
+    // await page.waitForTimeout(5000)
     await page.getByPlaceholder("Username").fill("Admin")
     await page.getByPlaceholder("Password").fill("acascads")
     await page.locator("//button[normalize-space()='Login']").click()
