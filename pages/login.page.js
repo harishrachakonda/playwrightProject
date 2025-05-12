@@ -1,12 +1,16 @@
-const {expect} = require('@playwright/test');
+const { expect } = require("@playwright/test");
 // This is the login page object model (POM) for the application
 class LoginPage {
   constructor(page) {
-    this.page=page
-    this.username = '#email1';
-    this.password = '#password1';
+    this.page = page;
+    this.username = "#email1";
+    this.password = "#password1";
     this.loginButton = "//*[@class='submit-btn']";
-    this.loginHeader = "//*[text()='Sign In']"
+    this.loginHeader = "//*[text()='Sign In']";
+  }
+
+  async launchApplication() {
+    await this.page.goto("https://freelance-learn-automation.vercel.app/login");
   }
 
   async loginApplication(username, password) {
@@ -19,6 +23,5 @@ class LoginPage {
   async verifySignIn() {
     await expect(this.page.locator(this.loginHeader)).toBeVisible();
   }
-
 }
-module.exports= LoginPage
+module.exports = {LoginPage};

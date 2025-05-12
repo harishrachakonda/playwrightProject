@@ -18,4 +18,4 @@ class HomePage {
     await this.page.click(this.logoutBtn);
   }
 }
-module.exports = HomePage
+module.exports = {HomePage}
