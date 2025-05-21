@@ -47,11 +47,11 @@ export default defineConfig({
       // testMatch: /verifyLoginErrorMessage.spec.js/,
     },
 
-    // {
-    //   name: "Google Chrome",
-    //   use: { channel: "chrome"},
-    //   // testMatch: /dropdown.spec.js/,
-    // },
+    {
+      name: "Google Chrome",
+      use: { channel: "chrome"},
+      // testMatch: /dropdown.spec.js/,
+    },
 
     // {
     //   name: 'firefox',
