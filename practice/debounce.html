@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Debounce Example</title>
+</head>
+<body>
+  <input id="search" placeholder="Search..." />
+  <script>
+    let timer;
+    document.getElementById("search").addEventListener("input", function(e) {
+      clearTimeout(timer);
+      const query = e.target.value;
+      timer = setTimeout(() => {
+        fetch(`/api/search?q=${query}`);
+      }, 300);
+    });
+  </script>
+</body>
+</html>

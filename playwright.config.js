@@ -47,21 +47,21 @@ export default defineConfig({
       // testMatch: /verifyLoginErrorMessage.spec.js/,
     },
 
-    {
-      name: "Google Chrome",
-      use: { channel: "chrome"},
-      // testMatch: /dropdown.spec.js/,
-    },
+    // {
+    //   name: "Google Chrome",
+    //   use: { channel: "chrome"},
+    //   // testMatch: /dropdown.spec.js/,
+    // },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {
